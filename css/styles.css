@@ -35,6 +35,8 @@
 }
 .header .logo__call {
   margin: 47px 42.5px 0 0;
+  border-bottom: 2px dashed #fff;
+  height: 20px;
 }
 .header .nav {
   text-transform: uppercase;
