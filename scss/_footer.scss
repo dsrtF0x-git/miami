@@ -1,0 +1,18 @@
+.footer {
+  height: 540px;
+	background-image: url('../images/footer-bg.jpg');
+	background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__block {
+    margin-bottom: 95px;
+  }
+
+  &__logo {
+    width: 115px;
+    height: 76px;
+  }
+}
