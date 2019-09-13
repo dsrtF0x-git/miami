@@ -1,0 +1,60 @@
+.consultation {
+  display: flex;
+  justify-content: center;
+  @include column-flex-center();
+
+  &__block {
+    @include column-flex-center();
+    display: flex;
+    margin-bottom: 123px;
+  }
+
+  &__heading {
+    @include heading_default();
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 145px;
+  }
+
+  &__head {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  &__article {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: $basic-line-height;
+    margin-right: 72px;
+  }
+
+  &__form {
+    display: flex;
+    @include column-flex();
+    width: 383px;
+
+    > button {
+      @include button__default();
+      height: 54px;;
+    }
+
+    &_input {
+      @include input_default();
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .consultation__row {
+    @include column-flex();
+    padding-left: 50px;
+  }
+
+  .consultation__form_input {
+    margin: 20px 0;
+  }
+}

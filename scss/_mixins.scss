@@ -1,0 +1,74 @@
+@mixin links {
+	color: #fff;
+	text-decoration: none;
+}
+
+@mixin hover__links {
+  color: $header-color;
+}
+
+@mixin column-flex {
+  flex-direction: column;
+}
+
+@mixin column-flex-center {
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin button__default {
+  background-color: #00aaef;
+  border-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s;
+
+  &:hover {
+    font-size: 18px;
+    background-color: #2f80ed;
+    cursor: pointer;
+  }
+}
+
+@mixin input_default {
+    background: #eee;
+    height: 54px;
+    text-align: center;
+    margin-bottom: 8px;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &::placeholder {
+      color: #000;
+    }
+}
+
+@mixin heading_default {
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: -28px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: #00aaef;
+      position: absolute;
+      bottom: -2px;
+      height: 2px;
+      width: 42%;
+    }
+
+    &::after {
+      content: "";
+      background-color: #00aaef;
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      height: 2px;
+      width: 42%;
+    }
+  }

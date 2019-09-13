@@ -1,0 +1,39 @@
+.info {
+  display: flex;
+  justify-content: center;
+
+  &__block {
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+    margin: 156px auto;
+  }
+
+  &__heading {
+    max-width: 314px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  &__articles {
+    max-width: 564px;
+    line-height: $basic-line-height;
+
+    & > p {
+      margin-bottom: 26px;
+    }
+
+    & > p:last-child {
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .info__block {
+    @include column-flex();
+    margin: 40px;
+  }
+}

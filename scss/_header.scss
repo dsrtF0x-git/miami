@@ -1,0 +1,91 @@
+.header {
+	height: 765px;
+	background-image: url('../images/header-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	@include column-flex-center();
+	justify-content: space-between;
+	font-weight: 500;
+
+	.logo {
+		display: flex;
+		justify-content: flex-end;
+		min-width: 1016px;
+		color: #fff;
+		margin-top: 35px;
+		text-transform: uppercase;
+
+		&__img {
+			width: 115px;
+			height: 76px;
+			margin-right: $logo-margin;
+		}
+
+		&__number {
+			@include links;
+      margin: 47px $logo-margin 0 0;
+
+      &:hover {
+        @include hover__links();
+      }
+		}
+
+		&__call {
+			margin: 47px 42.5px 0 0;
+			border-bottom: 2px dashed #fff;
+      height: 20px;
+      @include links;
+
+      &:hover {
+        @include hover__links();
+      }
+		}
+	}
+
+	.nav {
+		text-transform: uppercase;
+		margin-bottom: 25px;
+
+		&__list {
+			display: flex;
+			list-style: none;
+		}
+
+		&__item {
+			margin: 0 22.5px;
+			padding: 7px 20px;
+			white-space: nowrap;
+
+			&_active {
+				background: $header-color;
+				border-radius: 10px;
+			}
+		}
+
+		&__link {
+			@include links();
+			transition: color 0.3s;
+
+			&:hover {
+				@include hover__links();
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.nav__list {
+		@include column-flex-center();
+	}
+	.header .logo {
+    justify-content: center;
+    @include column-flex-center();
+
+    &__img,
+    &__number,
+    &__call {
+      margin-right: 0;
+    }
+  }
+}
