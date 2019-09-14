@@ -50,11 +50,20 @@
 
 @media screen and (max-width: 999px) {
   .consultation__row {
-    @include column-flex();
-    padding-left: 50px;
+    @include column-flex-center();
+    padding: 0 30px;
+
+    button, .consultation__form_input {
+      margin: 20px 0;
+    }
   }
 
-  .consultation__form_input {
-    margin: 20px 0;
+  .consultation__article {
+    margin-right: 0;
+  }
+
+  .consultation__form {
+    max-width: 302px;
+    margin-top: 20px;
   }
 }
