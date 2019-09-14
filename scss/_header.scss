@@ -11,7 +11,7 @@
 	.logo {
 		display: flex;
 		justify-content: flex-end;
-		min-width: 1016px;
+		width: 1016px;
 		color: #fff;
 		margin-top: 35px;
 		text-transform: uppercase;
@@ -81,11 +81,12 @@
 	.header .logo {
     justify-content: center;
     @include column-flex-center();
+    max-width: 302px;
 
     &__img,
     &__number,
     &__call {
-      margin-right: 0;
+      margin: 5px 0;
     }
   }
 }

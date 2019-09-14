@@ -18,7 +18,7 @@
 .header .logo {
   display: flex;
   justify-content: flex-end;
-  min-width: 1016px;
+  width: 1016px;
   color: #fff;
   margin-top: 35px;
   text-transform: uppercase;
@@ -82,9 +82,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    max-width: 302px;
   }
   .header .logo__img, .header .logo__number, .header .logo__call {
-    margin-right: 0;
+    margin: 5px 0;
   }
 }
 .info {
@@ -220,11 +221,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
   }
 
   .gallery__image_wrapper {
-    min-width: 302px;
     margin-bottom: 10px;
+  }
+  .gallery__image_wrapper > img {
+    max-width: 302px;
   }
 }
 .consultation {
@@ -315,11 +319,20 @@
 @media screen and (max-width: 999px) {
   .consultation__row {
     flex-direction: column;
-    padding-left: 50px;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .consultation__row button, .consultation__row .consultation__form_input {
+    margin: 20px 0;
   }
 
-  .consultation__form_input {
-    margin: 20px 0;
+  .consultation__article {
+    margin-right: 0;
+  }
+
+  .consultation__form {
+    max-width: 302px;
+    margin-top: 20px;
   }
 }
 .testimonials {
@@ -397,7 +410,7 @@
     align-items: center;
   }
   .testimonials__row > .testimonials__card {
-    margin-right: 0;
+    margin: 20px 0;
   }
 }
 .contact {
@@ -464,12 +477,12 @@
   margin-bottom: 8px;
   text-align: center;
   padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .contact__feedback::placeholder {
   text-align: center;
   color: black;
-  text-transform: uppercase;
-  font-weight: 500;
 }
 .contact__feedback ~ button {
   height: 54px;
@@ -504,6 +517,7 @@
 
   .contact__form {
     margin: 30px auto;
+    max-width: 302px;
   }
 }
 .highlight {
