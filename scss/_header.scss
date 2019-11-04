@@ -11,7 +11,7 @@
 	.logo {
 		display: flex;
 		justify-content: flex-end;
-		width: 1016px;
+		min-width: 1016px;
 		color: #fff;
 		margin-top: 35px;
 		text-transform: uppercase;
@@ -74,19 +74,18 @@
 	}
 }
 
-@media screen and (max-width: 999px) {
-	.nav__list {
-		@include column-flex-center();
-	}
-	.header .logo {
-    justify-content: center;
-    @include column-flex-center();
-    max-width: 302px;
+// @media screen and (max-width: 999px) {
+// 	.nav__list {
+// 		@include column-flex-center();
+// 	}
+// 	.header .logo {
+//     justify-content: center;
+//     @include column-flex-center();
 
-    &__img,
-    &__number,
-    &__call {
-      margin: 5px 0;
-    }
-  }
-}
+//     &__img,
+//     &__number,
+//     &__call {
+//       margin-right: 0;
+//     }
+//   }
+// }
