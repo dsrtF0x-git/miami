@@ -9,3 +9,16 @@
 @import 'testimonials';
 @import 'contact';
 @import 'mutual';
+
+@media screen and (max-width: 999px) {
+	.nav__list {
+		@include column-flex-center();
+	}
+	.header {
+
+		.logo {
+    justify-content: center;
+		@include column-flex-center();
+  }	
+}
+}

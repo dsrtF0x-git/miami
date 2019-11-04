@@ -54,13 +54,9 @@
   .gallery__row {
     display: flex;
     @include column-flex-center();
-    max-width: 100%;
   }
   .gallery__image_wrapper {
+    min-width: 302px;
     margin-bottom: 10px;
-
-    > img {
-      max-width: 302px;
-    }
   }
 }

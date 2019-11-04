@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="script/scroll.js" defer></script>
   <title>Miami</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
     <nav class="nav">
       <ol class="nav__list">
         <li class="nav__item nav__item_active">home</li>
-        <li class="nav__item"><a href="#home" class="nav__link">about us</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">gallery</a></li>
-        <li class="nav__item"><a href="#gallery" class="nav__link">consultation</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">about us</a></li>
+        <li class="nav__item"><a href="#gallery" class="nav__link">gallery</a></li>
+        <li class="nav__item"><a href="#consultation" class="nav__link">consultation</a></li>
         <li class="nav__item"><a href="#testimonials" class="nav__link">testimonials</a></li>
         <li class="nav__item"><a href="#contacts" class="nav__link">contacts</a></li>
       </ol>
@@ -64,7 +65,7 @@
     <button class="gallery__button">view all</button>
   </section>
 
-  <section class="consultation">
+  <section class="consultation" id="consultation">
     <div class="consultation__block">
       <h2 class="consultation__heading">Consultation</h2>
       <img src="images/crown.svg" alt="crown" class="crown">
@@ -74,7 +75,7 @@
         <h3 class="consultation__head">How long have<br> you do yourself a gift?</h3>
         <p class="consultation__article">The procedural change mezzo forte starts isometric pickup at these moments stop LA Mazel and VA Tsukkerman in his "Analysis of musical works". Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
       </div>
-      <form action="$" method="GET" class="consultation__form">
+      <form action="#" method="GET" class="consultation__form">
         <input type="name" placeholder="name" class="consultation__form_input">
         <input type="text" placeholder="phone" class="consultation__form_input">
         <input type="email" placeholder="email" class="consultation__form_input">
@@ -91,22 +92,22 @@
     <div class="testimonials__row">
       <div class="testimonials__card">
         <img src="images/test1.png" alt="card-picture">
-        <h4 class="testimonials__card_head">Roman Apostol</h4>
-        <span class="testimonials__card_position">CEO, Co-founder</span>
+        <h4 class="testimonials__card_head">Tim Cook</h4>
+        <span class="testimonials__card_position">CEO</span>
         <img src="images/clips.svg" alt="clips">
         <p class="testimonials__card_article">Nice work, Certificates National Association of Realtors (USA).</p>
       </div>
       <div class="testimonials__card">
         <img src="images/test2.png" alt="card-picture">
-        <h4 class="testimonials__card_head">Anna Apostol</h4>
-        <span class="testimonials__card_position">COO, Co-founder</span>
+        <h4 class="testimonials__card_head">Katherine Adams</h4>
+        <span class="testimonials__card_position">Senior Vice President</span>
         <img src="images/clips.svg" alt="clips">
         <p class="testimonials__card_article">My soul is illuminated by an unearthly joy, as these beautiful spring morning, which i enjoy with all my heart. I'm all alone and blissfully happy in the local edge.</p>
       </div>
       <div class="testimonials__card">
         <img src="images/test3.png" alt="card-picture">
-        <h4 class="testimonials__card_head">Max Lysak</h4>
-        <span class="testimonials__card_position">Co-founder, Growth</span>
+        <h4 class="testimonials__card_head">Jonathan Ive</h4>
+        <span class="testimonials__card_position">Chief Design Officer</span>
         <img src="images/clips.svg" alt="clips">
         <p class="testimonials__card_article">When my lovely valley of steam rises and half-day sun is above.</p>
       </div>
@@ -137,6 +138,6 @@
       <img src="images/logo.png" alt="logo" class="footer__logo">
     </div>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 </html>
